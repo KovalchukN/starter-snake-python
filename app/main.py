@@ -49,6 +49,28 @@ def start():
 @bottle.post('/move')
 def move():
     data = bottle.request.json
+    # Двумерный массив для хранения игрового поля
+
+        int[][] mas
+
+        # Создаем новый массив 11x11
+
+        mas = new int[11][11]
+
+        # Решим, что свободные ячейки игрового поля будут отмечаться в массиве нулями. Для начала можно обнулить массив:
+
+        # Заполняем весь массив нулями
+
+        for (int i = 0; i < 11; i++) {
+
+        for (int j = 0; j < 11; j++) {
+
+        mas[i][j] = 0
+
+        }
+
+        }
+
 
     """
     TODO: Using the data from the endpoint request object, your
